@@ -4,10 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css\style.css">
     <title>AlphaBuzz</title>
   </head>
   <body>
@@ -16,12 +17,13 @@
         <div class="d-flex justify-content-center align-items-center 
         flex-column py-5">
             <h1 class="main_heading" >AlphaBuzz</h1>
-            <p class="main_heading_para">Welcome to the world of <span> ABC-Blogs </span></p>
+            <p class="main_heading_para">Welcome to the world of 
+                <span class="text-capitalize bg-dark text-white py-2 px-3"> ABC-Blogs </span></p>
         </div>
         
         <!-- The main image -->
         <div class="main_header_div d-flex align-self-start 
-        justify-content-center flex-column shadow">
+        justify-content-center flex-column shadow mb-5">
             <p>ALPHABUZZ</p>
             <h2 class="animateWord">
                 <span>Blog topics are</span>
@@ -40,6 +42,7 @@
     </header>
 
     <!----header ends here----->
+
     <div class="container-fluid">
         <div class="row">
             <!-----to get left and right side div space----->
@@ -52,18 +55,73 @@
                         <div>
                             <div class="col-12 card p-4 shadow blog_left_div">
                                 <div class="d-flex justify-content-center 
-                                align-items-center flex-column py-5">
-                                <h1 class="main_heading">Bubble barrier</h1>
-                                <p class="main_heading_para">
-                                    Tech Tuesdays, <span>Jun 12, 2020</span>
+                                align-items-center flex-column py-3 ">
+                                <h1>Bubble Barrier</h1>
+                                <p class="blog-category">
+                                    <span class="fw-bold">
+                                        by Arushi Narayan | </span>Jun 12, 2020
                                 </p>
 
                                 </div>
+                                <figure class="right_side__img mb-5">
+                                    <img src="images\bubble.jpeg" alt="bubble" 
+                                    class="img-fluid shadow">
+                                </figure>
+                                <h2>A Smart Solution To Plastic Pollution: 
+                                    The Great Bubble Barrier</h2>
+                                <p> From using polythene bags, to lining milk cartons with plastic, 
+                                    it is one of the most overused item in today’s world because of 
+                                    its easy availability and cheap price.
+                               The Earth is drowning in plastic and we need new technologies and 
+                                    innovations to deal with this imperative issue. One such Dutch 
+                                    Start-up has come up with a smart solution to deal with ocean 
+                                    pollution due to plastics with their ‘Great Bubble Barrier’ 
+                                    which aims to...</p>  
+                                    
+                                    <!--like and comment and author button-->
+                                    <div class="d-flex justify-content-between left_div_btns">
+                                        <div>
+                                            <button class="left_div_like"
+                                            id="like_btn">
+                                            <i class="fas fa-thumbs-up"></i> Like
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="left_div_reply"
+                                            onclick="reply('reply1')">
+                                             Replies <badge class="bg-white text-dark p-2">
+                                                 1
+                                             </badge>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!----To show replies----->
+                                    <div class="replies" id="reply1">
+                                        <div class="d-flex justify-content-start flex-row 
+                                        align-self-center card reply_card py-3">
+                                            <div class="reply_img mx-2 align-items-center">
+                                                <img src="https://img.icons8.com/doodle/48/000000/boy.png"/>
+                                            </div>
+                                            <div class="replY_text_left">
+                                                <p class="blog_title">
+                                                    <span class="fw-bold">Anonymous,</span>
+                                                    Jun 15 2020, 5:20 PM
+                                                </p>
+                                                <p>Great Content! Arushi</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <!--like ends here-->
+                                    <!--read more button-->
+
+                                    <!------>
                             </div>
                         </div>
                     </div>
                     
-                     <!---- left side of div space---->
+                     <!---- right side of div space---->
                      <div class="col-lg-8 col-md-11 col-11 mx-auto">
                         
                     </div>
