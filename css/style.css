@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Josefin+Sans&display=swap');
 
+
 :root {
     --bg-size: 100% 100%;
     --main_color: #fff;
@@ -32,13 +33,20 @@ figure img, .fab, .fas{
     transition: var(--eff);
 }
 
-q, a:hover{
+a, a:hover{
     text-decoration: none;
     cursor: pointer;
 }
 
 body {
     background: hsl(84, 3%, 94%);
+}
+
+.main_header_div{
+    height: calc(100vh - 40vh);
+   /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0,0,0,0)), url(images/bg1.jpg); */
+    background-image:  url(../images/bg1.jpg); 
+   background-size: var(--bg-size);
 }
 
 .main_heading {
@@ -52,20 +60,120 @@ body {
     font-size: 2.2rem;
 }
 
-.main_header_div{
-    height: calc(100vh - 40vh);
-   /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0,0,0,0)), url(images/bg1.jpg); */
-    background-image:  url(../images/bg3.jpg); 
-   background-size: var(--bg-size);
-}
+
 
 .main_header_div p {
     font-weight: bold;
     font-size: 3.5rem;
     font-family: var(--title);
     color: var(--main_color);
-    /* padding-bottom: 0;
-    margin-bottom: 0;
+    
+    padding-left: 3.5rem;
 
-    */
 }
+
+.main_header_div h2 {
+    font-size: 6.5rem;
+    font-family: bold;
+    font-family: var(--title);
+    color: var(--main_color);
+    position: relative;
+    padding-bottom: 2rem;
+    transition: var(--eff);
+    padding-left: 3rem;
+
+}
+
+.main_header_div span {
+    font-family: var(--title);
+}
+
+.animateWord div {
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 8rem;
+    padding-top: 1rem;
+    margin-top: -1rem;
+}
+
+.animateWord div li{
+    font-weight: bold;
+    padding: 0 1rem;
+    height: 4.5rem;
+    margin-bottom: 4.5rem;
+    display: block;
+    font-family: var(--title);
+}
+
+.flip{
+    -webkit-animation: flip 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+    animation: flip 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@-webkit-keyframes flip {
+    0%{
+        margin-top: -360px;
+    }
+    5%{
+        margin-top: -270px;
+    }
+    25%{
+        margin-top: -270px;
+    }
+    30%{
+        margin-top: -180px;
+    }
+    50%{
+        margin-top: -180px;
+    }
+    55%{
+        margin-top: -90px;
+    }
+    75%{
+        margin-top: -90px;
+    }
+    80%{
+        margin-top: 0px;
+    }
+    99.99%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: -270px;
+    }
+}
+
+@keyframes flip {
+    0%{
+        margin-top: -360px;
+    }
+    5%{
+        margin-top: -270px;
+    }
+    25%{
+        margin-top: -270px;
+    }
+    30%{
+        margin-top: -180px;
+    }
+    50%{
+        margin-top: -180px;
+    }
+    55%{
+        margin-top: -90px;
+    }
+    75%{
+        margin-top: -90px;
+    }
+    80%{
+        margin-top: 0px;
+    }
+    99.99%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: -270px;
+    }
+}
+
