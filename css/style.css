@@ -61,15 +61,11 @@ body {
 }
 
 
-
 .main_header_div p {
     font-weight: bold;
     font-size: 3.5rem;
     font-family: var(--title);
     color: var(--main_color);
-    
-    padding-left: 3.5rem;
-
 }
 
 .main_header_div h2 {
@@ -80,7 +76,6 @@ body {
     position: relative;
     padding-bottom: 2rem;
     transition: var(--eff);
-    padding-left: 3rem;
 
 }
 
@@ -175,5 +170,86 @@ body {
     100%{
         margin-top: -270px;
     }
+}
+
+.main_header_div button {
+    color: var(--btn-font-color);
+    border-width: 0;
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+}
+
+.main_header_div button:hover,
+figure img:hover,
+.left_div_like:hover,
+.left_div_reply:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 3rem -1rem rgba(255,255,255,0.7);
+}
+
+/*-- Left side of blog starts--- */
+
+.blog_left_div h1{
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.blog_left_div .blog-category {
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.blog_left_div .blog-category span {
+    color: #1b262c;
+}
+
+.blog_left_div h2 {
+    color: #1b262c;
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.left_div_btns {
+    margin-top: 3rem;
+    transition: var(--eff);
+}
+
+.left_div_like {
+    color: var(--btn-font-color);
+    /*border-width: .2rem;*/
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+    border: none;
+}
+
+.left_div_reply {
+    color: var(--btn-font-color);
+    /*border-width: .2rem;*/
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+    border: none;
+}
+
+.replies {
+    margin: 2rem 0;
+    padding: 1rem 0;
+    transition: var(--eff);
+    display: none;
 }
 
