@@ -133,7 +133,16 @@
 
 
 
-
+    <script>
+        const reply = (res) => {
+            var res = document.getElementById(res);
+                if(res.className == 'replies') {
+                    res.className = "reply_hide";
+                }else if(res.className == 'reply_hide'){
+                    res.className = "replies";
+                }
+        }
+    </script>
 
 
 

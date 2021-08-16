@@ -253,3 +253,9 @@ figure img:hover,
     display: none;
 }
 
+.reply_hide {
+    margin: 2rem 0;
+    transition: var(--eff);
+    display: block;
+}
+
