@@ -118,11 +118,95 @@
 
                                     <!------>
                             </div>
+
+                            <!----second post----->
+                            <div class="col-12 card p-4 shadow blog_left_div">
+                                <div class="d-flex justify-content-center 
+                                align-items-center flex-column py-3 pb-5">
+                                <h1>Bubble Barrier</h1>
+                                <p class="blog-category">
+                                    <span class="fw-bold">
+                                        by Arushi Narayan | </span>Jun 12, 2020
+                                </p>
+
+                                </div>
+                                <figure class="right_side_img mb-5">
+                                    <img src="images\bubble.jpeg" alt="bubble" 
+                                    class="img-fluid shadow">
+                                </figure>
+                                <h2 class="fw-bold">A Smart Solution To Plastic Pollution: 
+                                    The Great Bubble Barrier</h2>
+                                <p> From using polythene bags, to lining milk cartons with plastic, 
+                                    it is one of the most overused item in today’s world because of 
+                                    its easy availability and cheap price.
+                               The Earth is drowning in plastic and we need new technologies and 
+                                    innovations to deal with this imperative issue. One such Dutch 
+                                    Start-up has come up with a smart solution to deal with ocean 
+                                    pollution due to plastics with their ‘Great Bubble Barrier’ 
+                                    which aims to...</p>  
+                                    
+                                    <!--like and comment and author button-->
+                                    <div class="d-flex justify-content-between left_div_btns">
+                                        <div>
+                                            <button class="left_div_like"
+                                            id="like_btn">
+                                            <i class="fas fa-thumbs-up"></i> Like
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="left_div_reply"
+                                            onclick="reply('reply2')">
+                                             Replies <badge class="bg-white text-dark p-2">
+                                                 2
+                                             </badge>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!----To show replies----->
+                                    <div class="replies" id="reply2">
+                                        <div class="d-flex justify-content-start flex-row 
+                                        align-self-center card reply_card py-3">
+                                            <div class="reply_img mx-2 align-items-center">
+                                                <img src="https://img.icons8.com/doodle/48/000000/boy.png"/>
+                                            </div>
+                                            <div class="replY_text_left">
+                                                <p class="blog_title">
+                                                    <span class="fw-bold">Anonymous,</span>
+                                                    Jun 15 2020, 5:20 PM
+                                                </p>
+                                                <p>Great Content! Arushi</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-row 
+                                        align-self-center card reply_card py-3">
+                                            <div class="reply_img mx-2 align-items-center">
+                                                <img src="https://img.icons8.com/doodle/48/000000/boy.png"/>
+                                            </div>
+                                            <div class="replY_text_left">
+                                                <p class="blog_title">
+                                                    <span class="fw-bold">Anonymous1,</span>
+                                                    Sept 15 2020, 5:20 PM
+                                                </p>
+                                                <p>thank you for the info</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <!--like ends here-->
+                                    <!--read more button-->
+
+                                    <!------>
+                            </div>
                         </div>
                     </div>
                     
                      <!---- right side of div space---->
-                     <div class="col-lg-8 col-md-11 col-11 mx-auto">
+                     <div class="col-lg-3 col-md-7 col-11 justify-content-end m-lg-0 m-auto">
+                        <div class="row gy-5 left_div_blog">
+                            
+                        </div>                         
                         
                     </div>
                 </div>
@@ -142,6 +226,39 @@
                     res.className = "replies";
                 }
         }
+
+
+        const like = document.getElementById('like_btn');
+
+        const singleClick = () => {
+            like.style.fontWeight = 'bold';
+            like.style.background = '#bbe1fa';
+            like.style.color = '#1b262c';
+            like.innerHTML = '✔ Liked';
+        }
+        const doubleClick = () => {
+            like.style.fontWeight = 'normal';
+            like.style.background = '#3282b8';
+            like.style.color = '#fff';
+            like.innerHTML = 'Like';
+        }
+
+
+        var clickCount = 0;
+        like.addEventListener('click', function() {
+            clickCount++;
+            if(clickCount === 1){
+                singleClickTimer = setTimeout(function() {
+                clickCount = 0;
+                singleClick();
+            }, 400);
+            }else if(clickCount === 2){
+                clearTimeout(singleClickTimer);
+                clickCount = 0;
+                doubleClick();
+            }
+        }, false);
+
     </script>
 
 
