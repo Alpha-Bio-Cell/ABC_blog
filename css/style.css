@@ -275,3 +275,37 @@ figure img:hover,
 .text_black a{
     color: var(--btn-font-color);
 }
+
+.popular_post_img1 {
+    background-image: url('../images/Prerana.jpeg');
+    background-size: var(--bg-size);
+}
+
+.popular_post_img2 {
+    background-image: url('../images/Anushka.jpeg');
+    background-size: var(--bg-size);
+}
+
+.popular_post_img3 {
+    background-image: url('../images/bg1.jpg');
+    background-size: var(--bg-size);
+}
+
+.right_sub_div{
+    background: #fff;
+    padding: 2.5rem 1rem;
+}
+
+.right_sub_div .row{
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.right_sub_div .row:last-child{
+    margin-bottom: 0;
+}
+
+.row > .right_div_post{
+    padding-left: 0;
+    padding-right: 0;
+}
