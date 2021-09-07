@@ -271,22 +271,17 @@ figure img:hover,
     padding-left: 2rem;
 }
 
-
-.text_black a{
-    color: var(--btn-font-color);
-}
-
-.popular_post_img1 {
+.author_img1 {
     background-image: url('../images/Prerana.jpeg');
     background-size: var(--bg-size);
 }
 
-.popular_post_img2 {
+.author_img2 {
     background-image: url('../images/Anushka.jpeg');
     background-size: var(--bg-size);
 }
 
-.popular_post_img3 {
+.author_img3 {
     background-image: url('../images/bg1.jpg');
     background-size: var(--bg-size);
 }
@@ -309,3 +304,59 @@ figure img:hover,
     padding-left: 0;
     padding-right: 0;
 }
+
+.popular_post_img1 {
+    background-image: url('../images/Prerana.jpeg');
+    background-size: var(--bg-size);
+}
+
+.popular_post_img2 {
+    background-image: url('../images/Anushka.jpeg');
+    background-size: var(--bg-size);
+}
+
+.popular_post_img3 {
+    background-image: url('../images/bg1.jpg');
+    background-size: var(--bg-size);
+}
+
+/*-----tags-----*/
+.tags_main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4rem, 12rem));
+    grid-gap: .5rem;
+}
+
+.tags_main a{
+    font-size: 1.7rem;
+    line-height: 170%;
+    font-weight: 200;
+    background: #6c757d;
+    transition: var(--eff);
+}
+
+.tags_main a:hover{
+    color: var(--btn-font-color);
+    background: var(--btn-color);
+}
+
+/*--- advertisement ---*/
+.advertise_img {
+    min-width: 10rem;
+    height: 20rem;
+    display: grid;
+    place-items: center;
+}
+
+/*----social media icons ---*/
+
+.fab, .fas{
+    color: #000;
+}
+
+.fab:hover, .fas:hover {
+    color: #d0cecf;
+    transform: rotate(360deg);
+}
+
+/*next starts from 2:10:10
