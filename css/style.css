@@ -306,17 +306,17 @@ figure img:hover,
 }
 
 .popular_post_img1 {
-    background-image: url('../images/Prerana.jpeg');
+    background-image: url('../images/webd.jpeg');
     background-size: var(--bg-size);
 }
 
 .popular_post_img2 {
-    background-image: url('../images/Anushka.jpeg');
+    background-image: url('../images/ml.jpeg');
     background-size: var(--bg-size);
 }
 
 .popular_post_img3 {
-    background-image: url('../images/bg1.jpg');
+    background-image: url('../images/brain.jpg');
     background-size: var(--bg-size);
 }
 
