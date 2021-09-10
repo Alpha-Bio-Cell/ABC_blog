@@ -42,18 +42,29 @@ body {
     background: hsl(84, 3%, 94%);
 }
 
+/*
+.main_header {
+    
+    margin-bottom: 1rem;
+}
+*/
+.main_header1{
+    background: #1b262c;
+
+}
+
 .main_header_div{
     height: calc(100vh - 40vh);
-   /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0,0,0,0)), url(images/bg1.jpg); */
-    background-image:  url(../images/bg1.jpg); 
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0,0,0,0)), url(../images/newbg6.jpg);
+   /* background-image:  url(../images/newbg6.jpg); */
    background-size: var(--bg-size);
 }
 
 .main_heading {
     font-family: var(--title);
     font-weight: bold;
-    font-size: 5rem;
-    color: #000;
+    font-size: 4rem;
+    color: #E5E5E5;
 }
 
 .main_heading_para {
