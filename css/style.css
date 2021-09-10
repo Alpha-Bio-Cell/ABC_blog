@@ -49,13 +49,19 @@ body {
 }
 */
 .main_header1{
-    background: #1b262c;
-
+    background: #1f313a;
 }
+
+.main_header1 img{
+    width: 12vw;
+    height: 12vh;
+}
+
+
 
 .main_header_div{
     height: calc(100vh - 40vh);
-   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0,0,0,0)), url(../images/newbg6.jpg);
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0,0,0,0)), url(../images/backgrounds/newbg7.jpg);
    /* background-image:  url(../images/newbg6.jpg); */
    background-size: var(--bg-size);
 }
@@ -69,6 +75,7 @@ body {
 
 .main_heading_para {
     font-size: 2.2rem;
+    color: #E5E5E5;
 }
 
 
