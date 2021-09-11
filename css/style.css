@@ -52,11 +52,12 @@ body {
     background: #1f313a;
 }
 
+/*
 .main_header1 img{
     width: 12vw;
     height: 12vh;
 }
-
+*/
 
 
 .main_header_div{
@@ -209,6 +210,15 @@ figure img:hover,
     transform: translateY(-0.5rem);
     box-shadow: 0 1rem 3rem -1rem rgba(255,255,255,0.7);
 }
+
+/*--- recent posts ---*/
+.main_heading_owl {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.25rem;
+    border-radius: 1.5rem;
+}
+
 
 /*-- Left side of blog starts--- */
 
