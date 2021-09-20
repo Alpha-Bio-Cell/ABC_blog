@@ -136,16 +136,16 @@
     <div class="container-fluid">
         <div class="row">
             <!-----to get left and right side div space----->
-            <div class="col-xl-10 col-lg-10 col-md-11 col-11 mx-auto my-5">
+            <div class="col-xl-10 col-lg-10 col-md-11 col-11 mx-auto my-3">
                 <div class="row gx-5 mx-sm-auto">
                     <!---- left side of div space---->
-                    <div class="col-lg-8 col-md-11 col-11 mx-auto mb-5">
+                    <div class="col-lg-8 col-md-11 col-11 mx-5 mb-5">
                         <div class="row gy-5">
                         <!--first post code-->
                         <!--<div>-->
                             <div class="col-12 card p-4 shadow blog_left_div">
                                 <div class="d-flex justify-content-center 
-                                align-items-center flex-column py-3 pb-5">
+                                align-items-center flex-column py-3 ">
                                 <h1>Bubble Barrier</h1>
                                 <p class="blog-category">
                                     <span class="fw-bold">
@@ -155,14 +155,12 @@
                                 </div>
                                 <figure class="right_side_img mb-5">
                                     <img src="images\bubble.jpeg" alt="bubble" 
-                                    class="img-fluid shadow">
+                                    style="height: 60rem; width: 100%;"
+                                    class="img-fluid shadow ">
                                 </figure>
                                 <h2 class="fw-bold">A Smart Solution To Plastic Pollution: 
                                     The Great Bubble Barrier</h2>
-                                <p> From using polythene bags, to lining milk cartons with plastic, 
-                                    it is one of the most overused item in today’s world because of 
-                                    its easy availability and cheap price.
-                               The Earth is drowning in plastic and we need new technologies and 
+                                <p> The Earth is drowning in plastic and we need new technologies and 
                                     innovations to deal with this imperative issue. One such Dutch 
                                     Start-up has come up with a smart solution to deal with ocean 
                                     pollution due to plastics with their ‘Great Bubble Barrier’ 
@@ -171,17 +169,34 @@
                                     <!--like and comment and author button-->
                                     <div class="d-flex justify-content-between left_div_btns">
                                         <div>
-                                            <button class="left_div_like"
+                                            <button class="left_div_like "
                                             id="like_btn">
                                             <i class="fas fa-thumbs-up"></i> Like
                                             </button>
+
+                                            <button class="left_div_reply "
+                                            onclick="reply('reply1')">
+                                             Replies <badge class="bg-white text-dark p-2">
+                                                 1
+                                             </badge>
+                                            </button>
+
                                         </div>
+                                        <!--
                                         <div>
                                             <button class="left_div_reply"
                                             onclick="reply('reply1')">
                                              Replies <badge class="bg-white text-dark p-2">
                                                  1
                                              </badge>
+                                            </button>
+                                        </div>
+                                    -->
+                                        <div>
+                                            <button class="left_div_readMore"
+                                            id="like_btn">
+                                            Read More &nbsp;
+                                            <i class="fas fa-arrow-right"></i> 
                                             </button>
                                         </div>
                                     </div>
@@ -212,7 +227,7 @@
                             <!----second post----->
                             <div class="col-12 card p-4 shadow blog_left_div">
                                 <div class="d-flex justify-content-center 
-                                align-items-center flex-column py-3 pb-5">
+                                align-items-center flex-column py-3 ">
                                 <h1>Financial Affairs</h1>
                                 <p class="blog-category">
                                     <span class="fw-bold">
@@ -222,6 +237,7 @@
                                 </div>
                                 <figure class="right_side_img mb-5">
                                     <img src="images\fin.jpeg" alt="bubble" 
+                                    style="height: 60rem; width: 100%;"
                                     class="img-fluid shadow">
                                 </figure>
                                 <h2 class="fw-bold">Introduction to
@@ -241,13 +257,30 @@
                                             id="like_btn">
                                             <i class="fas fa-thumbs-up"></i> Like
                                             </button>
+                                       
+                                            <button class="left_div_reply"
+                                            onclick="reply('reply2')">
+                                             Replies <badge class="bg-white text-dark p-2">
+                                                 2
+                                             </badge>
+                                            </button>
                                         </div>
+
+                                        <!--
                                         <div>
                                             <button class="left_div_reply"
                                             onclick="reply('reply2')">
                                              Replies <badge class="bg-white text-dark p-2">
                                                  2
                                              </badge>
+                                            </button>
+                                        </div>
+                                    -->
+                                        <div>
+                                            <button class="left_div_readMore"
+                                            id="like_btn">
+                                            Read More &nbsp;
+                                            <i class="fas fa-arrow-right"></i> 
                                             </button>
                                         </div>
                                     </div>

@@ -206,7 +206,8 @@ body {
 .main_header_div button:hover,
 figure img:hover,
 .left_div_like:hover,
-.left_div_reply:hover{
+.left_div_reply:hover,
+.left_div_readMore:hover{
     transform: translateY(-0.5rem);
     box-shadow: 0 1rem 3rem -1rem rgba(255,255,255,0.7);
 }
@@ -274,6 +275,7 @@ figure img:hover,
 
 /*-- Left side of blog starts--- */
 
+
 .blog_left_div h1{
     font-family: var(--title);
     font-weight: bold;
@@ -311,9 +313,23 @@ figure img:hover,
     font-family: var(--title);
     outline: none;
     border: none;
+    margin-right: 3rem;
 }
 
 .left_div_reply {
+    color: var(--btn-font-color);
+    /*border-width: .2rem;*/
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+    border: none;
+}
+
+.left_div_readMore {
     color: var(--btn-font-color);
     /*border-width: .2rem;*/
     font-size: var(--btn-font);
