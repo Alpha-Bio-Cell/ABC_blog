@@ -61,7 +61,7 @@ body {
 
 
 .main_header_div{
-    height: calc(100vh - 40vh);
+    height: calc(100vh - 30vh);
    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0,0,0,0)), url(../images/backgrounds/newbg7.jpg);
    /* background-image:  url(../images/newbg6.jpg); */
    background-size: var(--bg-size);
@@ -206,7 +206,7 @@ body {
 .main_header_div button:hover,
 figure img:hover,
 .left_div_like:hover,
-.left_div_reply:hover {
+.left_div_reply:hover{
     transform: translateY(-0.5rem);
     box-shadow: 0 1rem 3rem -1rem rgba(255,255,255,0.7);
 }
@@ -218,6 +218,58 @@ figure img:hover,
     letter-spacing: 0.25rem;
     border-radius: 1.5rem;
 }
+.blog-content{
+    overflow: hidden;
+}
+.blog-content img{
+    transition: all 1s ease;
+}
+
+.blog-content img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.item .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 1rem 1rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.card-img, .card-img-top {
+    height: 32rem;
+}
+
+.item .blog-content .blog-title{
+    padding: 2rem 0;
+}
+
+.item .blog-content .blog-title h2{
+    font-weight: bold;
+}
+
+.item .blog-content span{
+    display: block;
+    font-size: 2rem;
+    margin: .5rem;
+    
+} 
+.item .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    margin: .5rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+
 
 
 /*-- Left side of blog starts--- */

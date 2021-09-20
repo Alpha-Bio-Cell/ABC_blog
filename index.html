@@ -10,10 +10,11 @@
 
     <!--   owl carousel min.css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!--   owl carousel theme.min.css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!-- ------------ AOS Library ------------------------- -->
+        <link rel="stylesheet" href="css\aos.css">
 
     <link rel="stylesheet" href="css\style.css">
     <title>AlphaBuzz 2.0</title>
@@ -73,48 +74,48 @@
         </p>
         </div>
         
-        <div class="row mx-5 mb-3">
-            <div class="owl-carousel owl-theme">
-                <div class="item mx-5">
-                    <div class="card shadow border-2">
+        <div class="row mb-3 recent_post" >
+            <div class="owl-carousel owl-theme px-5 ">
+                <div class="item mx-3">
+                    <div class="card shadow border-2 blog-content"  >
                         <img src="images\mobili.jpeg" alt="hermes" class="card-img-top">
-                        <div class="card-body">
-                            <h2>Hermès – The Ultimate Luxury</h2>
-                            <p>by Prerna B</p>
-                            <p>27 Sept 2020 | 5 minute read</p>
+                        <div class="card-body blog-title">
+                            <h2>Mobilization of saving, capital formation</h2>
+                            <span>by Prerna B | 18 Oct 2020</span>
+                            <button class="btn btn-blog">7 minute read</button>
                         </div>
                     </div>
                 </div>
                 <!-----  2nd  ----->
-                <div class="item mx-5">
-                    <div class="card shadow border-2">
+                <div class="item mx-3" >
+                    <div class="card shadow border-2 blog-content">
                         <img src="images\herme.jpeg" alt="hermes" class="card-img-top">
-                        <div class="card-body">
-                            <h4>Hermès – The Ultimate Luxury</h4>
-                            <p>by Deekshitha J</p>
-                            <p>27 Sept 2020 | 5 minute read</p>
+                        <div class="card-body blog-title">
+                            <h2>Hermès – The Ultimate Luxury</h2>
+                            <span>by Deekshitha J | 25 Sept 2020</span>
+                            <button class="btn btn-blog">5 minute read</button>
                         </div>
                     </div>
                 </div>
                 <!--   item ends  -->
-                <div class="item mx-5">
-                    <div class="card shadow border-2">
+                <div class="item mx-3" >
+                    <div class="card shadow border-2 blog-content">
                         <img src="images\domino.jpeg" alt="hermes" class="card-img-top">
-                        <div class="card-body">
-                            <h4>Hermès – The Ultimate Luxury</h4>
-                            <p>by Anushka Bhandari</p>
-                            <p>27 Sept 2020 | 5 minute read</p>
+                        <div class="card-body blog-title">
+                            <h2>DOMINO’S – Slices of Pure Joy</h2>
+                            <span>by Anushka Bhandari | 20 Sept 2020</span>
+                            <button class="btn btn-blog">6 minute read</button>
                         </div>
                     </div>
                 </div>
                 <!--   item ends  -->
-                <div class="item mx-5">
-                    <div class="card shadow border-2">
-                        <img src="images\herme.jpeg" alt="hermes" class="card-img-top">
-                        <div class="card-body">
-                            <h4>Hermès – The Ultimate Luxury</h4>
-                            <p>by Deekshitha J</p>
-                            <p>27 Sept 2020 | 5 minute read</p>
+                <div class="item mx-3">
+                    <div class="card shadow border-2 blog-content">
+                        <img src="images\brain.jpg" alt="hermes" class="card-img-top">
+                        <div class="card-body blog-title">
+                            <h2>System to analyse road accidents</h2>
+                            <span>by Kevin | 10 Sept 2020</span>
+                            <button class="btn btn-blog">5 minute read</button>
                         </div>
                     </div>
                 </div>
@@ -505,8 +506,8 @@
     <!--   Init Owl Caraousel   -->
     <script>
         $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:20,
+    loop:false,
+    margin:30,
     nav:true,
     responsive:{
         0:{
@@ -521,6 +522,9 @@
     }
 })
     </script>
+
+     <!-- ------------ AOS js Library  ------------------------- -->
+     <script src="js\aos.js"></script>
 
 
   </body>
