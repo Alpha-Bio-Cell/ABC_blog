@@ -210,7 +210,9 @@ body {
 figure img:hover,
 .left_div_like:hover,
 .left_div_reply:hover,
-.left_div_readMore:hover{
+.left_div_readMore:hover,
+.subs_btn:hover
+.right_div_more:hover{
     transform: translateY(-0.5rem);
     box-shadow: 0 1rem 3rem -1rem rgba(255,255,255,0.7);
 }
@@ -373,6 +375,7 @@ figure img:hover,
 .author_img1 {
     background-image: url('../images/Prerana.jpeg');
     background-size: var(--bg-size);
+    border: #000;
 }
 
 .author_img2 {
@@ -381,8 +384,21 @@ figure img:hover,
 }
 
 .author_img3 {
-    background-image: url('../images/bg1.jpg');
+    background-image: url('../images/backgrounds/bg1.jpg');
     background-size: var(--bg-size);
+}
+
+.right_div_more {
+    color: var(--btn-font-color);
+    /*border-width: .2rem;*/
+    font-size: 1.2rem;
+    transition: var(--eff);
+    padding: .5rem .8rem;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+    border: none;
 }
 
 .right_sub_div{
@@ -449,13 +465,29 @@ figure img:hover,
 
 /*----social media icons ---*/
 
-.fab, .fas{
+.social_media .fas, .fab{
     color: #000;
 }
 
-.fab:hover, .fas:hover {
+.social_media .fas:hover, .fab:hover {
     color: #d0cecf;
     transform: rotate(360deg);
 }
 
-/*next starts from 2:10:10
+/*--- email subscription --- */
+.right_sub_div #exampleInputEmail1 {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0;
+}
+
+.subs_btn {
+    border-width: 0;
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    display: block;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+}
