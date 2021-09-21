@@ -59,14 +59,6 @@ body {
 }
 */
 
-
-.main_header_div{
-    height: calc(100vh - 30vh);
-   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0,0,0,0)), url(../images/backgrounds/newbg7.jpg);
-   /* background-image:  url(../images/newbg6.jpg); */
-   background-size: var(--bg-size);
-}
-
 .main_heading {
     font-family: var(--title);
     font-weight: bold;
@@ -80,9 +72,19 @@ body {
 }
 
 
+.main_header_div{
+    height: calc(100vh - 30vh);
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0,0,0,0)), url(../images/backgrounds/newbg7.jpg);
+   /* background-image:  url(../images/newbg6.jpg); */
+   background-size: var(--bg-size);
+   padding: 0 4rem;
+}
+
+
+
 .main_header_div p {
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 6rem;
     font-family: var(--title);
     color: var(--main_color);
 }
@@ -194,13 +196,14 @@ body {
 .main_header_div button {
     color: var(--btn-font-color);
     border-width: 0;
-    font-size: var(--btn-font);
+    font-size: 2rem;
     transition: var(--eff);
     padding: .8rem 2rem;
     background-color: var(--btn-color);
     border-color: var(--btn-color);
     font-family: var(--title);
     outline: none;
+    border-radius: 0.5rem;
 }
 
 .main_header_div button:hover,
