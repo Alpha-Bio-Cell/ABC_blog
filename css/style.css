@@ -375,17 +375,19 @@ figure img:hover,
 .author_img1 {
     background-image: url('../images/Prerana.jpeg');
     background-size: var(--bg-size);
-    border: #000;
+    border: 1px solid #000;
 }
 
 .author_img2 {
     background-image: url('../images/Anushka.jpeg');
     background-size: var(--bg-size);
+    border: 1px solid #000;
 }
 
 .author_img3 {
     background-image: url('../images/backgrounds/bg1.jpg');
     background-size: var(--bg-size);
+    border: 1px solid #000;
 }
 
 .right_div_more {
@@ -423,16 +425,19 @@ figure img:hover,
 .popular_post_img1 {
     background-image: url('../images/webd.jpeg');
     background-size: var(--bg-size);
+    border: 1px solid #000;
 }
 
 .popular_post_img2 {
     background-image: url('../images/ml.jpeg');
     background-size: var(--bg-size);
+    border: 1px solid #000;
 }
 
 .popular_post_img3 {
     background-image: url('../images/brain.jpg');
     background-size: var(--bg-size);
+    border: 1px solid #000;
 }
 
 /*-----tags-----*/
