@@ -499,12 +499,20 @@ figure img:hover,
 
 /*----  blog specials ---*/
 .card-img-top {
-    height: 20vh;
+    height: 30vh;
 }
 
 #homeCenterDiv .card .btn {
-    background-color: #2C3E50 !important;
+    background-color: #1f313a !important;
     border-color: #2C3E50 !important;
+}
+
+#homeCenterDiv .card .btn p{
+    color: #fff;
+    font-family: var(--btn-font);
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
 }
 
 #homeCenterDiv .card {
@@ -519,7 +527,7 @@ figure img:hover,
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #57e2b2;
+    background-color: #882e04;
     transition: 0.5s;
 }
 
@@ -540,3 +548,83 @@ figure img:hover,
     display: flex;
     flex: 1 1 auto;
 }
+
+
+/* ----------------- Footer --------------------- */
+
+footer.footer{
+    height: 100%;
+    background: #0f0f0f;
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color: #fff;
+}
+
+footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: var(--font-para);
+    /*font-family: var(--Josefin);*/
+    font-size: 1.2rem;
+    width: 83%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+
+footer.footer .follow div i{
+    color: #fff;
+    padding: 0 .4rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--font-para);
+    /*font-family: var(--Josefin);*/
+}
+
+footer.footer .rights h4 a{
+    color: #fff;
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: #104f55;
+}
+
+footer.footer .move-up span:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ---------x------- Footer ----------x---------- */
