@@ -499,7 +499,7 @@ figure img:hover,
 
 /*----  blog specials ---*/
 .card-img-top {
-    height: 30vh;
+    height: 40vh;
 }
 
 #homeCenterDiv .card .btn {
@@ -518,6 +518,7 @@ figure img:hover,
 #homeCenterDiv .card {
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .08);
     transition: all 0.3s ease-in-out;
+    
 }
 
 #homeCenterDiv .card:after {
@@ -527,7 +528,7 @@ figure img:hover,
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #882e04;
+    background-color: #be29be;
     transition: 0.5s;
 }
 
@@ -541,7 +542,7 @@ figure img:hover,
 }
 
 #homeCenterDiv .stretched-link {
-    border-radius: 0 0 0.25rem 0.25rem;
+    border-radius: 0 0 1rem 1rem;
 }
 
 .card-horizontal {
@@ -628,3 +629,6 @@ footer.footer .move-up span:hover{
 }
 
 /* ---------x------- Footer ----------x---------- */
+
+
+/*----- new footer   ----*/
