@@ -42,15 +42,45 @@ body {
     background: hsl(84, 3%, 94%);
 }
 
+#container {height: 100%; width:100%; }
+#left, #middle, #right {
+    display: inline-block;
+      vertical-align: top;
+    }
+#left {
+    width: 20%;
+    margin: 0.75% 2%;
+  }
+#middle {
+    width: 45%;
+    margin-left: 2%;
+ }
+#right {
+    width: 10%;
+    margin-left: 14%;
+    padding: 0.5% 1%;
+ }
+
+.abc-img {
+    width: 30%;
+}
+
+.abc-img1 {
+    width: 9vw;
+}
+
 /*
 .main_header {
     
     margin-bottom: 1rem;
 }
 */
+
+/*
 .main_header1{
     background: #1f313a;
 }
+*/
 
 /*
 .main_header1 img{
@@ -70,6 +100,7 @@ body {
     font-size: 2.2rem;
     color: #E5E5E5;
 }
+
 
 
 .main_header_div{
@@ -204,6 +235,51 @@ body {
     font-family: var(--title);
     outline: none;
     border-radius: 0.5rem;
+}
+
+@media (max-width: 575.98px) {
+    #right {
+        margin-left: 10%;
+        
+     }
+
+    .main_heading {
+        font-size: 2rem;
+        
+    }
+    
+    .main_heading_para {
+        font-size: 1rem;
+        line-height: 2rem;
+        
+    }      
+    
+    .abc-img {
+        width: 5rem;
+        margin: 0.5rem;
+    }
+    
+    .abc-img1 {
+        width: 6rem;
+        height: 5rem;
+    }
+
+    .main_header_div{
+        height: calc(100vh - 40vh);
+       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 30%, rgba(0,0,0,0)), url(../images/backgrounds/newbg7.jpg);
+       
+       background-size: var(--bg-size);
+       padding: 0 2rem;
+    }
+
+    .main_header_div p {
+        font-size: 5rem;
+    }
+
+    .main_header_div h2 {
+        font-size: 4rem;
+    }
+    
 }
 
 .main_header_div button:hover,
